@@ -1,0 +1,14 @@
+{
+  "name": "EFSCweb", // 项目名
+  "compatibility_date": "2026-02-23", // 根据这个日期，决定用哪个版本的wrangler运行时环境
+  "assets": {
+    "directory": "./dist",  // 静态网站的发布文件夹
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"  // for SSG
+  },
+  "main": "index.html",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
