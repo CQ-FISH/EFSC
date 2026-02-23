@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桂林市二附学校 - 官方网站</title>
+    <meta name="description" content="桂林市二附学校官方网站，提供学校简介、招生信息、教学科研、校园生活等资讯。地址：桂林市象山区万福路16号">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部信息栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="welcome-text">欢迎来到桂林市二附学校官方网站</span>
+                <span class="address">📍 桂林市象山区万福路16号</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:0773-1234567" class="contact-link">📞 0773-1234567</a>
+                <a href="admin/login.html" class="admin-link">后台管理</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo">
+                    <div class="logo-icon">二附</div>
+                </div>
+                <div class="school-name">
+                    <h1>桂林市二附学校</h1>
+                    <p>Guilin No.2 Affiliated School</p>
+                </div>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="academic.html" class="nav-link">教学科研</a></li>
+                    <li class="nav-item"><a href="admission.html" class="nav-link">招生信息</a></li>
+                    <li class="nav-item"><a href="campus.html" class="nav-link">校园生活</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">新闻中心</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="打开菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="academic.html">教学科研</a></li>
+                <li><a href="admission.html">招生信息</a></li>
+                <li><a href="campus.html">校园生活</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 英雄区域（轮播图） -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active" style="background-image: url('images/hero-1.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title" data-animate="fadeInUp">立德树人 追求卓越</h2>
+                    <p class="slide-desc" data-animate="fadeInUp" data-delay="200">培养具有国际视野的创新型人才</p>
+                    <a href="about.html" class="btn btn-primary" data-animate="fadeInUp" data-delay="400">了解更多</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-2.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">优质教育 成就未来</h2>
+                    <p class="slide-desc">现代化教学设施，专业化师资队伍</p>
+                    <a href="academic.html" class="btn btn-primary">探索教学</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-3.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">2025年招生火热进行中</h2>
+                    <p class="slide-desc">欢迎优秀学子加入二附大家庭</p>
+                    <a href="admission.html" class="btn btn-primary">立即报名</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="sliderPrev" aria-label="上一张">❮</button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slider-btn next" id="sliderNext" aria-label="下一张">❯</button>
+        </div>
+    </section>
+
+    <!-- 快捷入口 -->
+    <section class="quick-links-section">
+        <div class="container">
+            <div class="quick-links-grid">
+                <a href="admission.html" class="quick-link-card" data-animate="fadeInUp">
+                    <div class="quick-icon">📝</div>
+                    <h3>招生报名</h3>
+                    <p>在线报名通道</p>
+                </a>
+                <a href="news.html" class="quick-link-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="quick-icon">📰</div>
+                    <h3>学校新闻</h3>
+                    <p>最新校园动态</p>
+                </a>
+                <a href="campus.html" class="quick-link-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="quick-icon">🏫</div>
+                    <h3>校园环境</h3>
+                    <p>360°虚拟校园</p>
+                </a>
+                <a href="contact.html" class="quick-link-card" data-animate="fadeInUp" data-delay="300">
+                    <div class="quick-icon">📞</div>
+                    <h3>在线咨询</h3>
+                    <p>快速答疑解惑</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学校简介 -->
+    <section class="about-section section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">学校简介</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-animate="fadeInLeft">
+                    <div class="image-frame">
+                        <img src="images/school-building.jpg" alt="桂林市二附学校教学楼" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="years">30+</span>
+                            <span class="text">年办学历史</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-animate="fadeInRight">
+                    <h3>传承创新 培育英才</h3>
+                    <p>桂林市二附学校坐落于风景秀丽的桂林市象山区万福路16号，是一所具有深厚文化底蕴和现代化教育理念的全日制学校。学校秉承"立德树人、追求卓越"的办学理念，致力于培养德智体美劳全面发展的社会主义建设者和接班人。</p>
+                    <p>学校占地面积广阔，拥有现代化的教学设施和优美的校园环境。师资力量雄厚，拥有一支高学历、高素质、富有创新精神的教师队伍。</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5000">0</span>
+                            <span class="stat-label">在校学生</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="300">0</span>
+                            <span class="stat-label">专任教师</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">%升学率</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-outline">了解详情 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重要通知 -->
+    <section class="announcement-section section-padding bg-gradient">
+        <div class="container">
+            <div class="section-header light" data-animate="fadeInUp">
+                <span class="section-subtitle">Announcements</span>
+                <h2 class="section-title">重要通知</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="announcement-grid">
+                <div class="announcement-card urgent" data-animate="fadeInUp">
+                    <div class="card-badge urgent">紧急</div>
+                    <div class="card-date">
+                        <span class="day">15</span>
+                        <span class="month">2025.02</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>2025年春季学期开学通知</h3>
+                        <p>根据教育局统一安排，我校2025年春季学期将于2月17日正式开学，请各位同学做好开学准备...</p>
+                        <a href="#" class="read-more">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="announcement-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="card-badge">招生</div>
+                    <div class="card-date">
+                        <span class="day">10</span>
+                        <span class="month">2025.02</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>2025年招生简章发布</h3>
+                        <p>我校2025年招生工作正式启动，欢迎广大优秀学子报考。招生简章已发布，请查阅...</p>
+                        <a href="#" class="read-more">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="announcement-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="card-badge">活动</div>
+                    <div class="card-date">
+                        <span class="day">08</span>
+                        <span class="month">2025.02</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>校园开放日活动预告</h3>
+                        <p>为了让家长和学生更好地了解学校，我校将于3月1日举办校园开放日活动，欢迎预约参观...</p>
+                        <a href="#" class="read-more">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色亮点 -->
+    <section class="features-section section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">Features</span>
+                <h2 class="section-title">特色亮点</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass" data-animate="fadeInUp">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8L56 20V44L32 56L8 44V20L32 8Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 32L56 20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 32V56" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 32L8 20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>优质师资</h3>
+                    <p>汇聚全国优秀教师，硕士以上学历占比60%，高级职称教师占比40%</p>
+                </div>
+                <div class="feature-card glass" data-animate="fadeInUp" data-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 28L28 36L44 20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>精品课程</h3>
+                    <p>开设STEM课程、艺术修养、体育健康等多元化课程体系</p>
+                </div>
+                <div class="feature-card glass" data-animate="fadeInUp" data-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 16V32L44 40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>智慧校园</h3>
+                    <p>配备智能教学系统、数字化图书馆、创客实验室等现代化设施</p>
+                </div>
+                <div class="feature-card glass" data-animate="fadeInUp" data-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8C20 8 12 16 12 28C12 44 32 56 32 56C32 56 52 44 52 28C52 16 44 8 32 8Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>优美环境</h3>
+                    <p>园林式校园设计，绿化覆盖率达60%，营造宜学宜居的成长环境</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box" data-animate="fadeInUp">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">年办学历史</div>
+                </div>
+                <div class="stat-box" data-animate="fadeInUp" data-delay="100">
+                    <div class="stat-icon">👨‍🎓</div>
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">在校学生</div>
+                </div>
+                <div class="stat-box" data-animate="fadeInUp" data-delay="200">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-number" data-count="300">0</div>
+                    <div class="stat-label">专任教师</div>
+                </div>
+                <div class="stat-box" data-animate="fadeInUp" data-delay="300">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">%升学率</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section class="news-section section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">News</span>
+                <h2 class="section-title">新闻动态</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="news-grid">
+                <div class="news-card featured" data-animate="fadeInUp">
+                    <div class="news-image">
+                        <img src="images/news-1.jpg" alt="学校新闻" loading="lazy">
+                        <div class="news-category">学校动态</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">2025-02-20</span>
+                            <span class="news-views">👁 1,234</span>
+                        </div>
+                        <h3>我校荣获"广西自治区示范性高中"称号</h3>
+                        <p>近日，广西壮族自治区教育厅正式公布2025年示范性高中名单，我校凭借优异的教学质量和突出的办学特色成功入选...</p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </div>
+                <div class="news-list">
+                    <div class="news-item" data-animate="fadeInUp" data-delay="100">
+                        <div class="news-thumb">
+                            <img src="images/news-2.jpg" alt="新闻缩略图" loading="lazy">
+                        </div>
+                        <div class="news-info">
+                            <span class="news-date">2025-02-18</span>
+                            <h4><a href="#">我校学生在全市数学竞赛中斩获佳绩</a></h4>
+                        </div>
+                    </div>
+                    <div class="news-item" data-animate="fadeInUp" data-delay="200">
+                        <div class="news-thumb">
+                            <img src="images/news-3.jpg" alt="新闻缩略图" loading="lazy">
+                        </div>
+                        <div class="news-info">
+                            <span class="news-date">2025-02-15</span>
+                            <h4><a href="#">新学期教师培训圆满结束</a></h4>
+                        </div>
+                    </div>
+                    <div class="news-item" data-animate="fadeInUp" data-delay="300">
+                        <div class="news-thumb">
+                            <img src="images/news-4.jpg" alt="新闻缩略图" loading="lazy">
+                        </div>
+                        <div class="news-info">
+                            <span class="news-date">2025-02-12</span>
+                            <h4><a href="#">我校与桂林电子科技大学签署合作协议</a></h4>
+                        </div>
+                    </div>
+                    <div class="news-item" data-animate="fadeInUp" data-delay="400">
+                        <div class="news-thumb">
+                            <img src="images/news-5.jpg" alt="新闻缩略图" loading="lazy">
+                        </div>
+                        <div class="news-info">
+                            <span class="news-date">2025-02-10</span>
+                            <h4><a href="#">寒假社会实践活动成果展示</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer" data-animate="fadeInUp">
+                <a href="news.html" class="btn btn-outline">查看更多新闻</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校园风采 -->
+    <section class="gallery-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">Gallery</span>
+                <h2 class="section-title">校园风采</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large" data-animate="fadeInUp">
+                    <img src="images/gallery-1.jpg" alt="校园风光" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">校园全景</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fadeInUp" data-delay="100">
+                    <img src="images/gallery-2.jpg" alt="教学楼" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">现代化教学楼</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fadeInUp" data-delay="200">
+                    <img src="images/gallery-3.jpg" alt="图书馆" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">图书馆</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fadeInUp" data-delay="300">
+                    <img src="images/gallery-4.jpg" alt="实验室" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">科学实验室</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fadeInUp" data-delay="400">
+                    <img src="images/gallery-5.jpg" alt="运动场" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">标准运动场</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <div class="logo-icon">二附</div>
+                            <h3>桂林市二附学校</h3>
+                        </div>
+                        <p>立德树人，追求卓越。致力于培养德智体美劳全面发展的社会主义建设者和接班人。</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="微信">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="微博">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.573h.014zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.579-.18-.401-.649.386-1.018.425-1.893.002-2.517-.789-1.168-2.947-1.108-5.388-.031 0 0-.772.338-.575-.274.381-1.204.324-2.212-.27-2.794-1.346-1.324-4.929.047-8.007 3.063C.947 11.611 0 13.982 0 16.02c0 3.905 5.015 6.281 9.923 6.281 6.432 0 10.706-3.723 10.706-6.68 0-1.787-1.506-2.803-2.57-3.152zm1.026-6.405c-.771-.851-1.924-1.18-2.996-1.002a.75.75 0 0 0-.604.864c.077.45.51.753.96.676.521-.089 1.068.076 1.439.486.371.41.498.97.339 1.493a.75.75 0 0 0 .522.927c.433.123.881-.128 1.003-.561.318-1.093.046-2.319-.663-3.183zm2.413-2.412c-1.591-1.755-3.982-2.434-6.204-2.07a.75.75 0 0 0-.604.864c.077.45.51.753.96.676 1.598-.272 3.279.226 4.424 1.489a4.503 4.503 0 0 1 .699 4.763.75.75 0 0 0 .522.927c.433.123.881-.128 1.003-.561a6.002 6.002 0 0 0-.8-6.188z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="抖音">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>快速链接</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">学校简介</a></li>
+                            <li><a href="academic.html">教学科研</a></li>
+                            <li><a href="admission.html">招生信息</a></li>
+                            <li><a href="campus.html">校园生活</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>联系方式</h4>
+                        <ul class="contact-info">
+                            <li>
+                                <span class="icon">📍</span>
+                                <span>桂林市象山区万福路16号</span>
+                            </li>
+                            <li>
+                                <span class="icon">📞</span>
+                                <span>0773-1234567</span>
+                            </li>
+                            <li>
+                                <span class="icon">📧</span>
+                                <span>info@guilin2school.edu.cn</span>
+                            </li>
+                            <li>
+                                <span class="icon">🕐</span>
+                                <span>周一至周五 8:00-17:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>订阅资讯</h4>
+                        <p>订阅我们的邮件，获取最新校园动态</p>
+                        <form class="subscribe-form" id="subscribeForm">
+                            <input type="email" placeholder="请输入您的邮箱" required>
+                            <button type="submit" class="btn btn-primary">订阅</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 桂林市二附学校 版权所有 | 桂ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

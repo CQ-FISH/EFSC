@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台登录 - 桂林市二附学校</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* 登录页面专用样式 */
+        .login-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-primary-800) 0%, var(--color-primary-700) 50%, var(--color-secondary-600) 100%);
+            padding: 20px;
+        }
+        
+        .login-container {
+            width: 100%;
+            max-width: 420px;
+        }
+        
+        .login-box {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .login-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .login-logo .logo-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            font-size: 28px;
+        }
+        
+        .login-logo h2 {
+            font-size: 24px;
+            color: var(--color-neutral-800);
+            margin-bottom: 5px;
+        }
+        
+        .login-logo p {
+            color: var(--color-neutral-500);
+            font-size: 14px;
+        }
+        
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+        }
+        
+        .login-form input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            font-size: 16px;
+            transition: var(--transition-normal);
+        }
+        
+        .login-form input:focus {
+            outline: none;
+            border-color: var(--color-primary-500);
+        }
+        
+        .login-form .btn-login {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .login-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            color: var(--color-neutral-600);
+        }
+        
+        .login-options a {
+            color: var(--color-primary-700);
+        }
+        
+        .login-options a:hover {
+            text-decoration: underline;
+        }
+        
+        .login-footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+        
+        .login-footer a {
+            color: var(--color-neutral-500);
+            font-size: 14px;
+        }
+        
+        .login-footer a:hover {
+            color: var(--color-primary-700);
+        }
+        
+        .login-copyright {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+        
+        /* 验证码样式 */
+        .captcha-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .captcha-group input {
+            flex: 1;
+        }
+        
+        .captcha-img {
+            width: 120px;
+            height: 48px;
+            background: var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-primary-700);
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <div class="login-box">
+                <div class="login-logo">
+                    <div class="logo">
+                        <div class="logo-icon">二附</div>
+                    </div>
+                    <h2>后台管理系统</h2>
+                    <p>桂林市二附学校</p>
+                </div>
+                
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="username">用户名</label>
+                        <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <input type="password" id="password" name="password" placeholder="请输入密码" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="captcha">验证码</label>
+                        <div class="captcha-group">
+                            <input type="text" id="captcha" name="captcha" placeholder="请输入验证码" required>
+                            <div class="captcha-img" id="captchaImg" title="点击刷新">A7K9</div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-login">登录</button>
+                    
+                    <div class="login-options">
+                        <label>
+                            <input type="checkbox" name="remember">
+                            记住我
+                        </label>
+                        <a href="#">忘记密码？</a>
+                    </div>
+                </form>
+                
+                <div class="login-footer">
+                    <a href="../index.html">← 返回学校官网</a>
+                </div>
+            </div>
+            
+            <p class="login-copyright">&copy; 2025 桂林市二附学校 版权所有</p>
+        </div>
+    </div>
+    
+    <script>
+        // 验证码刷新
+        document.getElementById('captchaImg').addEventListener('click', function() {
+            const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+            let captcha = '';
+            for (let i = 0; i < 4; i++) {
+                captcha += chars[Math.floor(Math.random() * chars.length)];
+            }
+            this.textContent = captcha;
+        });
+        
+        // 表单提交
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 模拟登录成功
+            const username = document.getElementById('username').value;
+            
+            if (username) {
+                // 存储登录状态
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                sessionStorage.setItem('adminUser', username);
+                
+                // 跳转到后台首页
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>

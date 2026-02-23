@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 桂林市二附学校</title>
+    <meta name="description" content="联系桂林市二附学校，获取学校地址、联系电话、在线咨询等信息。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部信息栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="welcome-text">欢迎来到桂林市二附学校官方网站</span>
+                <span class="address">📍 桂林市象山区万福路16号</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:0773-1234567" class="contact-link">📞 0773-1234567</a>
+                <a href="admin/login.html" class="admin-link">后台管理</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo">
+                    <div class="logo-icon">二附</div>
+                </div>
+                <div class="school-name">
+                    <h1>桂林市二附学校</h1>
+                    <p>Guilin No.2 Affiliated School</p>
+                </div>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="academic.html" class="nav-link">教学科研</a></li>
+                    <li class="nav-item"><a href="admission.html" class="nav-link">招生信息</a></li>
+                    <li class="nav-item"><a href="campus.html" class="nav-link">校园生活</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">新闻中心</a></li>
+                    <li class="nav-item active"><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="打开菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="academic.html">教学科研</a></li>
+                <li><a href="admission.html">招生信息</a></li>
+                <li><a href="campus.html">校园生活</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 页面标题区域 -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('images/contact-header.jpg');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1>联系我们</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>联系我们</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="contact-info-section section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">Contact Info</span>
+                <h2 class="section-title">联系方式</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-cards">
+                <div class="contact-card" data-animate="fadeInUp">
+                    <div class="contact-icon-large">📍</div>
+                    <h4>学校地址</h4>
+                    <p>桂林市象山区万福路16号</p>
+                    <p>邮编：541000</p>
+                </div>
+                <div class="contact-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="contact-icon-large">📞</div>
+                    <h4>联系电话</h4>
+                    <p>办公室：0773-1234567</p>
+                    <p>招生办：0773-1234568</p>
+                </div>
+                <div class="contact-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="contact-icon-large">📧</div>
+                    <h4>电子邮箱</h4>
+                    <p>info@guilin2school.edu.cn</p>
+                    <p>admission@guilin2school.edu.cn</p>
+                </div>
+                <div class="contact-card" data-animate="fadeInUp" data-delay="300">
+                    <div class="contact-icon-large">🕐</div>
+                    <h4>工作时间</h4>
+                    <p>周一至周五</p>
+                    <p>上午 8:00 - 下午 17:30</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图和留言表单 -->
+    <section class="map-contact-section section-padding bg-light">
+        <div class="container">
+            <div class="map-contact-grid">
+                <div class="map-container" data-animate="fadeInLeft">
+                    <h3>学校位置</h3>
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <div class="map-marker">📍</div>
+                            <p>桂林市二附学校</p>
+                            <p>桂林市象山区万福路16号</p>
+                            <a href="https://map.baidu.com/search/桂林市象山区万福路16号" target="_blank" class="btn btn-outline">查看地图导航</a>
+                        </div>
+                    </div>
+                    <div class="transport-info">
+                        <h4>交通指南</h4>
+                        <ul>
+                            <li><strong>公交路线：</strong>乘坐5路、12路、28路公交车至"二附学校站"下车</li>
+                            <li><strong>地铁路线：</strong>乘坐地铁1号线至"万福路站"，步行约10分钟</li>
+                            <li><strong>自驾路线：</strong>导航搜索"桂林市二附学校"，学校提供访客停车位</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-animate="fadeInRight">
+                    <h3>在线留言</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">您的姓名 <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">联系电话 <span class="required">*</span></label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">电子邮箱</label>
+                                <input type="email" id="contactEmail" name="contactEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactType">咨询类型 <span class="required">*</span></label>
+                                <select id="contactType" name="contactType" required>
+                                    <option value="">请选择</option>
+                                    <option value="admission">招生咨询</option>
+                                    <option value="academic">教学咨询</option>
+                                    <option value="cooperation">合作洽谈</option>
+                                    <option value="complaint">投诉建议</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="contactSubject">留言主题 <span class="required">*</span></label>
+                            <input type="text" id="contactSubject" name="contactSubject" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="contactMessage">留言内容 <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="请详细描述您的咨询内容..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="contactAgreement" name="contactAgreement" required>
+                            <label for="contactAgreement">我已阅读并同意<a href="#">《隐私政策》</a></label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">提交留言</button>
+                            <button type="reset" class="btn btn-outline">重置</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部门联系 -->
+    <section class="departments-section section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">Departments</span>
+                <h2 class="section-title">部门联系</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="departments-grid">
+                <div class="department-card" data-animate="fadeInUp">
+                    <div class="department-icon">📝</div>
+                    <h4>招生办公室</h4>
+                    <p>负责招生咨询、报名、录取等工作</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234568</p>
+                        <p>📧 admission@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+                <div class="department-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="department-icon">📚</div>
+                    <h4>教务处</h4>
+                    <p>负责教学管理、课程安排、考试组织等</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234569</p>
+                        <p>📧 academic@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+                <div class="department-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="department-icon">👨‍👩‍👧‍👦</div>
+                    <h4>学生处</h4>
+                    <p>负责学生管理、德育工作、心理健康等</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234570</p>
+                        <p>📧 student@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+                <div class="department-card" data-animate="fadeInUp" data-delay="300">
+                    <div class="department-icon">🏠</div>
+                    <h4>总务处</h4>
+                    <p>负责后勤保障、校园安全、设施维护等</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234571</p>
+                        <p>📧 general@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+                <div class="department-card" data-animate="fadeInUp" data-delay="400">
+                    <div class="department-icon">💼</div>
+                    <h4>校长办公室</h4>
+                    <p>负责学校行政、对外联络、合作洽谈等</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234567</p>
+                        <p>📧 principal@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+                <div class="department-card" data-animate="fadeInUp" data-delay="500">
+                    <div class="department-icon">🔬</div>
+                    <h4>教科室</h4>
+                    <p>负责教育科研、教师培训、教学改革等</p>
+                    <div class="department-contact">
+                        <p>📞 0773-1234572</p>
+                        <p>📧 research@guilin2school.edu.cn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题快捷链接 -->
+    <section class="quick-faq-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-animate="fadeInUp">
+                <span class="section-subtitle">FAQ</span>
+                <h2 class="section-title">常见问题</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="quick-faq-grid">
+                <a href="admission.html#faq" class="quick-faq-card" data-animate="fadeInUp">
+                    <div class="quick-faq-icon">❓</div>
+                    <h4>招生常见问题</h4>
+                    <p>了解招生政策、报名流程、入学要求等</p>
+                </a>
+                <a href="academic.html" class="quick-faq-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="quick-faq-icon">📖</div>
+                    <h4>教学相关问题</h4>
+                    <p>了解课程设置、师资力量、教学特色等</p>
+                </a>
+                <a href="campus.html" class="quick-faq-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="quick-faq-icon">🏫</div>
+                    <h4>校园生活问题</h4>
+                    <p>了解住宿条件、食堂餐饮、社团活动等</p>
+                </a>
+                <a href="news.html" class="quick-faq-card" data-animate="fadeInUp" data-delay="300">
+                    <div class="quick-faq-icon">📰</div>
+                    <h4>最新动态资讯</h4>
+                    <p>查看学校新闻、通知公告、活动预告等</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <div class="logo-icon">二附</div>
+                            <h3>桂林市二附学校</h3>
+                        </div>
+                        <p>立德树人，追求卓越。致力于培养德智体美劳全面发展的社会主义建设者和接班人。</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="微信">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="微博">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.573h.014zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.579-.18-.401-.649.386-1.018.425-1.893.002-2.517-.789-1.168-2.947-1.108-5.388-.031 0 0-.772.338-.575-.274.381-1.204.324-2.212-.27-2.794-1.346-1.324-4.929.047-8.007 3.063C.947 11.611 0 13.982 0 16.02c0 3.905 5.015 6.281 9.923 6.281 6.432 0 10.706-3.723 10.706-6.68 0-1.787-1.506-2.803-2.57-3.152zm1.026-6.405c-.771-.851-1.924-1.18-2.996-1.002a.75.75 0 0 0-.604.864c.077.45.51.753.96.676.521-.089 1.068.076 1.439.486.371.41.498.97.339 1.493a.75.75 0 0 0 .522.927c.433.123.881-.128 1.003-.561.318-1.093.046-2.319-.663-3.183zm2.413-2.412c-1.591-1.755-3.982-2.434-6.204-2.07a.75.75 0 0 0-.604.864c.077.45.51.753.96.676 1.598-.272 3.279.226 4.424 1.489a4.503 4.503 0 0 1 .699 4.763.75.75 0 0 0 .522.927c.433.123.881-.128 1.003-.561a6.002 6.002 0 0 0-.8-6.188z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="抖音">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>快速链接</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">学校简介</a></li>
+                            <li><a href="academic.html">教学科研</a></li>
+                            <li><a href="admission.html">招生信息</a></li>
+                            <li><a href="campus.html">校园生活</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>联系方式</h4>
+                        <ul class="contact-info">
+                            <li>
+                                <span class="icon">📍</span>
+                                <span>桂林市象山区万福路16号</span>
+                            </li>
+                            <li>
+                                <span class="icon">📞</span>
+                                <span>0773-1234567</span>
+                            </li>
+                            <li>
+                                <span class="icon">📧</span>
+                                <span>info@guilin2school.edu.cn</span>
+                            </li>
+                            <li>
+                                <span class="icon">🕐</span>
+                                <span>周一至周五 8:00-17:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>订阅资讯</h4>
+                        <p>订阅我们的邮件，获取最新校园动态</p>
+                        <form class="subscribe-form" id="subscribeForm">
+                            <input type="email" placeholder="请输入您的邮箱" required>
+                            <button type="submit" class="btn btn-primary">订阅</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 桂林市二附学校 版权所有 | 桂ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 联系表单提交
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 模拟提交成功
+            alert('留言已提交成功！我们将尽快与您联系。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
